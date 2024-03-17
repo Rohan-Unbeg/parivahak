@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo a{
+  margin-left: 40px;
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+}
+
+.form-main {
+  width: 60%;
+  max-width: 300px; /* Limit maximum width */
+  margin: 20px auto; /* Center horizontally with top and bottom margin */
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form input {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #E8F0FE;
+  border: 1px solid grey;
+}
+
+.signin-form input:hover,
+.signin-form input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
+.or {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signin-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: blue;
+  color: white;
+  font-size: 16px; /* Adjust font size for mobile */
+  white-space: nowrap; /* Prevent text from wrapping */
+  cursor: pointer;
+}
+
+#signup-btn {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup-btn button {
+  width: 100%; /* Full width */
+}
+#signup-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+#continuewg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: blue; /* Google blue */
+  color: white;
+  cursor: pointer;
+}
+
+#donthave {
+  font-size: 15px;
+}
+
+#continuewg span {
+  flex: 1; /* Takes remaining space */
+  text-align: center; /* Center the text */
+}
+
+#continuewg img {
+  width: 25px;
+}
+
+@media only screen and (max-width: 850px) {
+  .form-main {
+    width: 60vw; /* Adjust the percentage as needed */
+    height: 60vh; /* Adjust the viewport height as needed */
+    margin: 20px auto; /* Apply margin to the top and bottom */
+  }
+  #donthave {
+    font-size: 12px;
+  }
+  .signin-form button {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}

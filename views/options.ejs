@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parivahak</title>
+    <link rel="stylesheet" href="/stylesheets/options.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">PariVahak</div>
+    </div>
+    <div class="heading">
+      <h1>Join as a Client or Truck Owner</h1>
+    </div>
+
+    <div class="main">
+      <div class="options" onclick="selectOption('client-radio')">
+        <div class="up">
+          <i class="fas fa-user" style="font-size: 24px"></i>
+          <input type="radio" name="client-radio" id="client-radio" />
+        </div>
+
+        <h3>I am a client looking for trucks</h3>
+      </div>
+
+      <div class="options" onclick="selectOption('truck-radio')">
+        <div class="up">
+          <i class="fas fa-user" style="font-size: 24px"></i>
+          <input type="radio" name="truck-radio" id="truck-radio" />
+        </div>
+
+        <h3>I am truck owner looking for loads</h3>
+      </div>
+    </div>
+    <div class="signup-btns">
+      <button id="signup-btn" onclick="signup()" disabled>
+       Create Account
+      </button>
+      <div>
+        <p>Already have an account? <a href="/signin">Log In</a></p>
+      </div>
+    </div>
+
+    <script>
+
+      function selectOption(radioButtonId) {
+        const radioButton = document.getElementById(radioButtonId);
+        radioButton.checked = true;
+
+        const button = document.getElementById("signup-btn");
+        if (radioButtonId === "client-radio") {
+          button.innerText = "Join as a Client";
+          button.style.backgroundColor = "blue"; 
+          button.style.color = "white"; 
+          button.style.fontWeight = '600';
+          document.getElementById("truck-radio").checked = false;
+          button.disabled = false;
+        } else {
+          button.innerText = "Join as a Truck Owner";
+          button.style.backgroundColor = "blue"; // Change background color
+          button.style.color = "white";
+          button.style.fontWeight = '600'; // Change text color to white
+          document.getElementById("client-radio").checked = false;
+          button.disabled = false;
+        }
+      }
+
+      function signup() {
+        const buttonText = document.getElementById("signup-btn").innerText;
+        if (buttonText === "Join as a Client") {
+          // Redirect to client page
+
+          window.location.href = "/clientsignup";
+        } else if (buttonText === "Join as a Truck Owner") {
+          // Redirect to truck page
+          
+          // window.location.href = "/trucksignup";
+          window.location.href = "/clientsignup";
+        } else {
+          // Handle other cases here
+          alert("Redirecting to a different page...");
+        }
+      }
+    </script>
+  </body>
+</html>
