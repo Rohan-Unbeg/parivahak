@@ -13,10 +13,9 @@
   justify-content: center;
 }
 
-.logo a{
-  margin-left: 40px;
+.logo a {
   font-weight: bold;
-  color: blue;
+  color: #0d6efd;
   text-decoration: none;
 }
 
@@ -39,14 +38,14 @@
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  background-color: #E8F0FE;
+  background-color: #e8f0fe;
   border: 1px solid grey;
 }
 
 .signin-form input:hover,
 .signin-form input:focus {
   outline: none;
-  border: 2px solid blue;
+  border: 2px solid #0d6efd;
 }
 
 .or {
@@ -59,7 +58,7 @@
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  background-color: blue;
+  background-color: #0d6efd;
   color: white;
   font-size: 16px; /* Adjust font size for mobile */
   white-space: nowrap; /* Prevent text from wrapping */
@@ -90,7 +89,7 @@
   padding: 10px 20px;
   border: none;
   border-radius: 50px;
-  background-color: blue; /* Google blue */
+  background-color: #0d6efd; /* Google #0d6efd */
   color: white;
   cursor: pointer;
 }

@@ -45,10 +45,18 @@
         background-color: #0b5ed7;
         border-color: #0a58ca;
       }
-      .hero {
+      /* .hero {
         background-color: #f8f9fa;
         color: #212529;
         padding-top: 6rem;
+      } */
+      .hero {
+        background-color: #f8f9fa;
+        color: #212529;
+        padding-top: 6rem; /* Increase padding to accommodate the navbar */
+        padding-top: calc(
+          6rem + 56px
+        ); /* Adjust padding for the height of the navbar (56px) */
       }
       .hero h1 {
         font-weight: 700;
@@ -82,6 +90,16 @@
         background-color: #0d6efd;
         color: #fff;
       }
+
+      .contact-center{
+        text-align: center;
+      }
+      @media (max-width: 767px) {
+  .hero {
+    padding-top: calc(6rem + 56px + 20px); /* Adjust padding for the height of the navbar (56px) and add extra margin */
+    margin-top: 20px; /* Add margin to push down the hero section */
+  }
+}
     </style>
   </head>
 
@@ -89,7 +107,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top mb-5">
       <div class="container">
-        <a class="navbar-brand" href="/">Sampark</a>
+        <a class="navbar-brand" href="/">PariVahak</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -143,7 +161,7 @@
         <div class="row align-items-center">
           <!-- Text Content -->
           <div class="col-md-6">
-            <h1 class="display-4">Welcome to Sampark</h1>
+            <h1 class="display-4">Welcome to PariVahak</h1>
             <p class="lead">
               Your premier destination for revolutionizing logistics across
               India. With Sampark, simplify truck booking and manage shipments
@@ -178,7 +196,7 @@
           </div>
           <div class="col-md-6 order-md-1">
             <div>
-              <h2 class="mb-4">About Us</h2>
+              <h2 class="mb-4 text-center my-5">About Us</h2>
               <p>
                 Welcome to Sampark, your premier destination for revolutionizing
                 logistics across India. We're dedicated to simplifying truck
@@ -206,7 +224,7 @@
     <!-- Services Section -->
     <section id="services" class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">Our Services</h2>
+        <h2 class="text-center mb-4 my-5">Our Services</h2>
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card h-100">
@@ -281,7 +299,7 @@
           </div>
           <!-- Contact Form -->
           <div class="col-md-6 mt-5">
-            <h2 class="my-4">Contact Us</h2>
+            <h2 class="mb-4 contact-center">Contact Us</h2>
             <div class="contact-form">
               <form>
                 <div class="form-group">
@@ -343,3 +361,6 @@
     </script>
   </body>
 </html>
+
+
+<!-- #0d6efd color - 0d6efd -->
