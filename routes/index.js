@@ -24,9 +24,9 @@ router.get("/trucksignup", (req, res) => {
 router.get("/clientsignup", (req, res) => {
   res.render("clientsignup");
 });
-router.get("/profile",isLoggedIn, (req, res) => {
-  res.send("profile page");
-});
+// router.get("/profile",isLoggedIn, (req, res) => {
+//   res.send("profile page");
+// });
 
 // router.post("/signup", function (req, res) {
 //   const userdata = new userModel({
