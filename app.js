@@ -7,7 +7,7 @@ var indexRouter = require("./routes/index");
 const expressSession = require("express-session");
 const passport = require("passport");
 
-const PORT = 3001;
+const PORT = 3000;
 
 app.set("views", "./views");
 app.use(express.urlencoded({ extended: true }));
