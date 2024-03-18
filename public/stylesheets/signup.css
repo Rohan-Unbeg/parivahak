@@ -27,7 +27,7 @@ body {
 .padding-top {
     height: 60px; /* Same height as the navbar */
   }
-.logo a {
+.logo {
   font-weight: bold;
   color: #0d6efd;
   text-decoration: none;
