@@ -1,0 +1,149 @@
+html,
+body {
+  background-color: #f8f9fa;
+  height: 100vh;
+}
+.w-100 {
+  width: 100% !important;
+  height: 60vh;
+}
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0d6efd !important;
+}
+.nav-link {
+  color: #6c757d !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #0d6efd !important;
+}
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.footer {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 40vh;
+}
+
+.hero-container {
+  width: 80%;
+  height: 200px;
+  background: white;
+  position: absolute;
+  bottom: -3rem;
+  -webkit-border-top-left-radius: 25px;
+  -webkit-border-top-right-radius: 25px;
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-topright: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 30px;
+
+}
+
+.book-btns{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.book-btns button {
+  padding: 10px;
+  /* margin-top: 10px;
+  margin-right: 10px; */
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+#b1{
+    margin-right: 10px;
+}
+
+.search-city {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.search-city input {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.search-city button {
+  width: 100px;
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid black;
+
+  font-weight: bold;
+}
+
+.card-custom {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card-custom:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-title-custom {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 850px) {
+  .search-city {
+    flex-direction: column;
+  }
+  .search-city button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .search-city input {
+    width: 100%;
+  }
+  .book-btns{
+   justify-content: center; 
+  }
+  .book-btns button{
+  width: 50%;
+  font-size: 12px;
+  }
+}
