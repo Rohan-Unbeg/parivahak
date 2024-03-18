@@ -47,6 +47,10 @@ router.get("/edit", (req, res) => {
   res.render("edit");
 });
 
+router.get("/marketplace", (req, res) => {
+  res.render("marketplace");
+});
+
 const {
   validateFname,
   validateLname,
