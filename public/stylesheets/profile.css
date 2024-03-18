@@ -44,6 +44,9 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 100%;
+  height: 50vh;
+  background-color: #08123B;
 }
 
 .hero img {
@@ -86,6 +89,10 @@ body {
   cursor: pointer;
   text-wrap: nowrap;
 }
+.book-btns button a{
+text-decoration: none;
+color: black;
+}
 
 #b1{
     margin-right: 10px;
@@ -93,14 +100,15 @@ body {
 
 .search-city {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 10px;
 }
 .search-city input {
-  width: 80%;
-  padding: 5px;
-  border: 1px solid black;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    margin-right: 10px;
 }
 
 .search-city button {
@@ -138,6 +146,7 @@ body {
   }
   .search-city input {
     width: 100%;
+    margin-right: 0;
   }
   .book-btns{
    justify-content: center; 
@@ -146,4 +155,5 @@ body {
   width: 50%;
   font-size: 12px;
   }
+
 }

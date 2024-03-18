@@ -35,6 +35,18 @@ router.get("/clientsignup", (req, res) => {
   res.render("clientsignup");
 });
 
+router.get("/trucklist", (req, res) => {
+  res.render("trucklist");
+});
+
+router.get("/loadlist", (req, res) => {
+  res.render("loadlist");
+});
+
+router.get("/edit", (req, res) => {
+  res.render("edit");
+});
+
 const {
   validateFname,
   validateLname,
